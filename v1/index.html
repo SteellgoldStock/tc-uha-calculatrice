@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculatrice - Version 1</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <form onsubmit="event.preventDefault(); calculate()">
+    <div id="calculator">
+      <input type="number" id="number1" placeholder="Premier nombre">
+
+      <select id="operation">
+        <option value="add">Addition (+)</option>
+        <option value="subtract">Soustraction (-)</option>
+        <option value="multiply">Multiplication (x)</option>
+        <option value="divide">Division (÷)</option>
+      </select>
+
+      <input type="number" id="number2" placeholder="Deuxième nombre">  
+    </div>
+
+    <button type="submit">Calculer</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
