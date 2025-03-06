@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice - Version 2</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div id="main">
+    <div id="screen">
+      <div class="screen-content">
+        <p id="top-text"></p>
+        <h2 id="bottom-text"></h2>
+      </div>
+    </div>
+    
+    <div id="calculator">
+      <div id="numbers">
+        <div class="line-one">
+          <button id="btn-number" class="radius-left">7</button>
+          <button id="btn-number">8</button>
+          <button id="btn-number">9</button>
+        </div>
+    
+        <div class="line-two">
+          <button id="btn-number">4</button>
+          <button id="btn-number">5</button>
+          <button id="btn-number">6</button>
+        </div>
+    
+        <div class="line-three">
+          <button id="btn-number">1</button>
+          <button id="btn-number">2</button>
+          <button id="btn-number">3</button>
+        </div>
+    
+        <div class="line-four">
+          <button id="btn-dot" class="radius-left-bottom">.</button>
+          <button id="btn-number">0</button>
+          <button id="btn-equal">=</button>
+        </div>
+      </div>
+  
+      <!-- Add the operators -->
+      <div class="operators">
+        <button id="btn-operator" class="radius-right">-</button>
+        <button id="btn-operator">x</button>
+        <button id="btn-operator">/</button>
+        <button id="btn-operator" class="radius-right-bottom">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
