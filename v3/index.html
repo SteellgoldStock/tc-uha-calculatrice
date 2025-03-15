@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculatrice</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">  
+      <div class="previous-expression" id="previous-expression"></div>
+      <div class="current-input" id="current-input">0</div>
+    </div>
+      
+    <div class="buttons">
+      <button class="btn" onclick="handleClear()">C</button>
+      <button class="btn" onclick="handleParenthesis()">&#40;</button>
+      <button class="btn" onclick="handleOperatorInput('%')">%</button>
+      <button class="btn operator" onclick="handleOperatorInput('÷')">÷</button>
+      <button class="btn" onclick="handleNumberInput('7')">7</button>
+      <button class="btn" onclick="handleNumberInput('8')">8</button>
+      <button class="btn" onclick="handleNumberInput('9')">9</button>
+      <button class="btn operator" onclick="handleOperatorInput('×')">×</button>
+      <button class="btn" onclick="handleNumberInput('4')">4</button>
+      <button class="btn" onclick="handleNumberInput('5')">5</button>
+      <button class="btn" onclick="handleNumberInput('6')">6</button>
+      <button class="btn operator" onclick="handleOperatorInput('-')">-</button>
+      <button class="btn" onclick="handleNumberInput('1')">1</button>
+      <button class="btn" onclick="handleNumberInput('2')">2</button>
+      <button class="btn" onclick="handleNumberInput('3')">3</button>
+      <button class="btn operator" onclick="handleOperatorInput('+')">+</button>
+      <button class="btn" onclick="handleDelete()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-delete">
+          <path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/>
+          <path d="m12 9 6 6"/>
+          <path d="m18 9-6 6"/>
+        </svg>
+      </button>
+        
+      <button class="btn" onclick="handleNumberInput('0')">0</button>
+      <button class="btn" onclick="handleNumberInput('.')">.</button>
+      <button class="btn equals" onclick="calculateResult()">=</button>
+    </div>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
