@@ -1,70 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-
-<body>
-	<style>
-		body {
+    <style>
+	    body {
 			margin: 0;
 			padding: 0;
+			display: flex;
+			height: 100vh;
+		}
+
+		.container {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		#left {
-			float: left;
-			width: 50%;
-			height: 100vh;
 			background-color: #333;
-			align-items: center;
-			justify-content: center;
-			display: flex;
 		}
 
 		#right {
-			float: right;
-			width: 50%;
-			height: 100vh;
 			background-color: #666;
-			align-items: center;
-			justify-content: center;
-			display: flex;
 		}
 
 		#right2 {
-			float: right;
-			width: 50%;
-			height: 100vh;
 			background-color: #444;
-			align-items: center;
-			justify-content: center;
-			display: flex;
 		}
 
 		a {
 			color: white;
 			text-decoration: none;
 			font-size: 2em;
-			
-			&:hover {
-				color: #f00;
-				text-decoration: underline;
-			}
+		}
+
+		a:hover {
+			color: #f00;
+			text-decoration: underline;
 		}
 	</style>
-
-  <a id="left" href="v1/index.html">
-		Version 1
-  </a>
-
-	<a id="right" href="v2/index.html">
-		Version 2
-	</a>
-
-	<a id="right2" href="v3/index.html">
-		Version 3
-	</a>
+</head>
+<body>
+	<div class="container" id="left">
+		<a href="v1/index.html">Version 1</a>
+	</div>
+	<div class="container" id="right">
+		<a href="v2/index.html">Version 2</a>
+	</div>
+	<div class="container" id="right2">
+		<a href="v3/index.html">Version 3</a>
+	</div>
 </body>
 </html>
