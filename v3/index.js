@@ -132,5 +132,6 @@ document.addEventListener("keydown", function(event) {
 	else if (key === "(" || key === ")") handleParenthesis();
 	else if (key === "Enter") calculateResult();
 	else if (key === "Backspace") handleDelete();
+	else if (key === "Delete") handleDelete();
 	else if (key === "Escape") handleClear();
 });
